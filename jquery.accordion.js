@@ -415,7 +415,7 @@
             } else if (settings.openCloseHelper.openIcon) {
               //Set a icon
               for (i = 0; i <= countHeads; i++) {
-                $(headLis[i]).append('<i class="icon-' + settings.openCloseHelper.openIcon + '"></i>');
+                $(headLis[i]).append('<i class="fa ' + settings.openCloseHelper.openIcon + '"></i>');
               }
 
             }
@@ -466,7 +466,7 @@
             }
             //Insert Close icon if exists
             if (settings.openCloseHelper.closeIcon) {
-              $(headLis[settings.startSlide - 1]).find('i').attr("class", 'icon-' + settings.openCloseHelper.closeIcon);
+              $(headLis[settings.startSlide - 1]).find('i').attr("class", 'fa ' + settings.openCloseHelper.closeIcon);
             }
 
             //and if exists a class name for tab set it then
@@ -540,7 +540,7 @@
 
           //If it has a openIcon set it
           if (settings.openCloseHelper.openIcon) {
-            $(selector).parent().find('i').attr("class", 'icon-' + settings.openCloseHelper.openIcon);
+            $(selector).parent().find('i').attr("class", 'fa ' + settings.openCloseHelper.openIcon);
           }
         },
 
@@ -554,9 +554,9 @@
           if (settings.openCloseHelper.closeIcon) {
             //When init accordion length is 1 because it targets directly li, but after that we need to add parent for searching inside li
             if ($(selector).find('i').length > 0) {
-              $(selector).find('i').attr("class", 'icon-' + settings.openCloseHelper.closeIcon);
+              $(selector).find('i').attr("class", 'fa ' + settings.openCloseHelper.closeIcon);
             } else {
-              $(selector).parent().find('i').attr("class", 'icon-' + settings.openCloseHelper.closeIcon);
+              $(selector).parent().find('i').attr("class", 'fa ' + settings.openCloseHelper.closeIcon);
             }
           }
 
@@ -575,9 +575,9 @@
           if (settings.openCloseHelper.closeIcon) {
             //When init accordion length is 1 because it targets directly li, but after that we need to add parent for searching inside li
             if ($(selector).find('i').length > 0) {
-              $(selector).find('i').attr("class", 'icon-' + settings.openCloseHelper.closeIcon);
+              $(selector).find('i').attr("class", 'fa ' + settings.openCloseHelper.closeIcon);
             } else {
-              $(selector).parent().find('i').attr("class", 'icon-' + settings.openCloseHelper.closeIcon);
+              $(selector).parent().find('i').attr("class", 'fa ' + settings.openCloseHelper.closeIcon);
             }
           }
 
@@ -603,7 +603,7 @@
 
           //If it has a openIcon set it
           if (settings.openCloseHelper.openIcon) {
-            $(selector).parent().find('i').attr("class", 'icon-' + settings.openCloseHelper.openIcon);
+            $(selector).parent().find('i').attr("class", 'fa ' + settings.openCloseHelper.openIcon);
           }
         },
 
